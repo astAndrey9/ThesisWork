@@ -59,7 +59,7 @@ class Crypt(QtWidgets.QMainWindow, design_encryptor_decrypt.Ui_MainWindow):
         open_key = list(self.lineEdit.text().split())
         print(open_message)
         print(open_key)
-        bin_str = wrap(str(self.make_bitseq(open_message)), len(open_key))#отремонтировать подачу нулей, ибо криво сделано
+        bin_str = wrap(str(self.make_bitseq(open_message)), len(open_key))
         print(bin_str)
 
         print(bin_str)
@@ -261,5 +261,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-\end{lstlisting}
-\end{document}
